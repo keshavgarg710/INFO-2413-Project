@@ -309,3 +309,27 @@ public class Bookdatabase {
 		return booksList;
 	}
 }
+// sql book and user database
+/* create database lib;  
+use lib;  
+CREATE TABLE `books` (
+  `BOOK_ID` int(4) NOT NULL,
+  `TITLE` varchar(100) NOT NULL,
+  `AUTHOR` varchar(100) NOT NULL,
+  `PUBLICATION` varchar(100) NOT NULL,
+  `EDITION` varchar(100) NOT NULL,
+  `YEAR` int(4) NOT NULL
+);
+SELECT * FROM user;
+INSERT INTO `books` (`BOOK_ID`, `TITLE`, `AUTHOR`, `PUBLICATION`, `EDITION`, `YEAR` ) VALUES
+(1, 'Core Java Volume I – Fundamentals', 'Cay S. Horstmann', 'Prentice Hall', '11th Edition', 2020 );
+CREATE TABLE `user` (
+  `ID` int(4) NOT NULL,
+  `NAME` varchar(100) NOT NULL,
+  `USERNAME` varchar(100) NOT NULL,
+  `PASSWORD` varchar(100) NOT NULL,
+  `EMAILID` varchar(100) DEFAULT NULL
+);
+INSERT INTO `user` (`ID`, `NAME`, `USERNAME`, `PASSWORD`, `EMAILID`) VALUES
+(0, 'Administrator', 'admin', '123', 'admin@gmail.com');
+*/
